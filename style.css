@@ -1,0 +1,145 @@
+/* Your CSS code with responsiveness added */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    background-color: rgb(2, 2, 96);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(4, 4, 34);
+    color: white;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(192, 192, 255);
+    font-size: 1.04rem;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 23px 0;
+}
+
+.leftsection {
+    width: 50%; /* Set the width to 50% to occupy half of the container */
+    padding: 0 20px; /* Add some padding for better spacing */
+}
+
+.rightsection {
+    width: 50%; /* Set the width to 50% to occupy half of the container */
+    padding: 0 20px 0 150px; /* Add some padding for better spacing */
+   
+    box-sizing: border-box;
+}
+
+.rightsection img {
+    width: 85%;
+    height: auto;
+}
+
+.purple {
+    color: blueviolet;
+    font-size: 50px;
+}
+
+.para1 {
+    font-size: 14px;
+}
+
+.para {
+    font-size: 30px;
+}
+
+.pink {
+    color: brown;
+}
+
+.btn {
+    color: rgb(246, 0, 230);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    border: 5px solid rgb(65, 2, 123);
+    background-color: rgb(65, 2, 123);
+    border-radius: 500px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block; /* Ensure the button is displayed as a block element */
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .left {
+        font-size: 1.5rem;
+    }
+    
+    .purple {
+        font-size: 40px;
+    }
+    
+    .para {
+        font-size: 24px;
+    }
+
+    .firstsection {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .leftsection,
+    .rightsection {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .left {
+        font-size: 1.2rem;
+    }
+    
+    .purple {
+        font-size: 30px;
+    }
+    
+    .para {
+        font-size: 18px;
+    }
+}
