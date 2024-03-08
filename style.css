@@ -1,18 +1,16 @@
-/* Your CSS code with responsiveness added */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab:wght@600&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box; 
 }
 
 body {
     background-color: rgb(2, 2, 96);
     color: white;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
 }
 
 nav {
@@ -58,13 +56,13 @@ nav ul li a:hover {
 }
 
 .leftsection {
-    width: 50%; /* Set the width to 50% to occupy half of the container */
-    padding: 0 20px; /* Add some padding for better spacing */
+    width: 50%; 
+    padding: 0 20px;
 }
 
 .rightsection {
-    width: 50%; /* Set the width to 50% to occupy half of the container */
-    padding: 0 20px 0 150px; /* Add some padding for better spacing */
+    width: 50%; 
+    padding: 0 20px 0 150px; 
    
     box-sizing: border-box;
 }
@@ -102,10 +100,9 @@ nav ul li a:hover {
     border-radius: 500px;
     margin-top: 20px;
     text-decoration: none;
-    display: inline-block; /* Ensure the button is displayed as a block element */
+    display: inline-block;
 }
 
-/* Media Queries for Responsiveness */
 
 @media only screen and (max-width: 768px) {
     .left {
@@ -121,12 +118,12 @@ nav ul li a:hover {
     }
 
     .firstsection {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+        flex-direction: column;
     }
 
     .leftsection,
     .rightsection {
-        width: 100%; /* Take full width on smaller screens */
+        width: 100%;
     }
 }
 
